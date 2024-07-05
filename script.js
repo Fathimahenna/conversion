@@ -36,3 +36,10 @@ function convert() {
 
     document.getElementById('result').innerText = `Result: ${result}`;
 }
+
+// Function to add logo file
+function addLogo(logoUrl) {
+    const logo = document.getElementById('logo');
+    logo.src = logoUrl;
+    logo.style.display = 'block';
+}
