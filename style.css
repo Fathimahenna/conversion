@@ -13,10 +13,30 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
 }
 
-h1 {
-    text-align: center;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0078d7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .converter {
@@ -26,13 +46,32 @@ h1 {
 
 label {
     margin-top: 10px;
+    color: black; /* Label color */
 }
 
 input, select, button {
     margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005bb5;
 }
 
 #result {
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
+    color: black; /* Result text color */
 }
