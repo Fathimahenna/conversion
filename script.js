@@ -34,7 +34,8 @@ function convert() {
         result = 'Conversion not supported.';
     }
 
-    document.getElementById('result').innerText = `Result: ${result}`;
+    // Display result with units
+    document.getElementById('result').innerText = `Result: ${result.toFixed(2)} ${toUnit}`;
 }
 
 // Function to add logo file
