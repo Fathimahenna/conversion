@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Unit Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -12,40 +12,41 @@
             <img id="logo" src="logo.png" alt="Logo" style="display: none;">
             <h1>Engineering Unit Converter</h1>
         </header>
-        <div class="converter">
-            <label for="value">Enter Value:</label>
-            <input type="number" id="value" placeholder="Enter value">
+        <div class="converter-box">
+            <div class="converter">
+                <label for="value">Enter Value:</label>
+                <input type="number" id="value" placeholder="Enter value">
 
-            <label for="from-unit">From:</label>
-            <select id="from-unit">
-                <option value="m/s">Meters per second (m/s)</option>
-                <option value="km/h">Kilometers per hour (km/h)</option>
-                <option value="C">Celsius (°C)</option>
-                <option value="F">Fahrenheit (°F)</option>
-                <option value="Pa">Pascals (Pa)</option>
-                <option value="kPa">Kilopascals (kPa)</option>
-                <option value="psi">Pounds per square inch (psi)</option>
-                <!-- Add more units as needed -->
-            </select>
+                <label for="from-unit">From:</label>
+                <select id="from-unit">
+                    <option value="m/s">Meters per second (m/s)</option>
+                    <option value="km/h">Kilometers per hour (km/h)</option>
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="Pa">Pascals (Pa)</option>
+                    <option value="kPa">Kilopascals (kPa)</option>
+                    <option value="psi">Pounds per square inch (psi)</option>
+                    <!-- Add more units as needed -->
+                </select>
 
-            <label for="to-unit">To:</label>
-            <select id="to-unit">
-                <option value="km/h">Kilometers per hour (km/h)</option>
-                <option value="m/s">Meters per second (m/s)</option>
-                <option value="F">Fahrenheit (°F)</option>
-                <option value="C">Celsius (°C)</option>
-                <option value="Pa">Pascals (Pa)</option>
-                <option value="kPa">Kilopascals (kPa)</option>
-                <option value="psi">Pounds per square inch (psi)</option>
-                <!-- Add more units as needed -->
-            </select>
+                <label for="to-unit">To:</label>
+                <select id="to-unit">
+                    <option value="km/h">Kilometers per hour (km/h)</option>
+                    <option value="m/s">Meters per second (m/s)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="C">Celsius (°C)</option>
+                    <option value="Pa">Pascals (Pa)</option>
+                    <option value="kPa">Kilopascals (kPa)</option>
+                    <option value="psi">Pounds per square inch (psi)</option>
+                    <!-- Add more units as needed -->
+                </select>
 
-            <button onclick="convert()">Convert</button>
+                <button onclick="convert()">Convert</button>
 
-            <div id="result"></div>
+                <div id="result"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
